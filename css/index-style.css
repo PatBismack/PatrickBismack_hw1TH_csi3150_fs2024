@@ -1,0 +1,265 @@
+/* Import Google API fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* Set Variables */
+  --bg-primary: rgba(13, 19, 33, 1);
+  --bg-secondary: rgba(62, 92, 118, 1);
+  --font-color-primary: rgba(240, 235, 216, 1);
+  --font-color-secondary: rgba(116, 140, 171, 1);
+  --backup-color: rgba(29, 45, 68, 1);
+}
+main{
+  height: 1050px;
+}
+/* Style for body */
+body {
+  height: 100%;
+  background: var(--bg-primary);
+}
+/* style for header */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0px 25px;
+}
+/* Style for Avatar and Name */
+.navbar .nav-logo {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+}
+/* Style for logo */
+.navbar .nav-logo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--font-color-primary);
+  margin-right: 15px;
+}
+/* Style for name */
+.navbar .nav-logo h1 {
+  color: var(--font-color-primary);
+  font-size: 36px;
+  font-weight: 600;
+}
+/* Style for navigation menu */
+.navbar nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar nav ul li {
+  list-style: none;
+}
+.navbar nav ul li a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  font-size: 24px;
+  margin-right: 50px;
+  transition: backgroun 0.3s ease;
+}
+/* Event to change nav menu color */
+.navbar nav ul li a:hover {
+  color: var(--font-color-primary);
+}
+/* Remove right margin from Fun Facts link */
+.navbar nav ul li:last-child a {
+  margin-right: 0px;
+}
+/* Style for hire button */
+.navbar .hire-btn {
+  background: var(--backup-color);
+  color: var(--font-color-primary);
+  padding: 6px 30px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+/* Event to change hire button color */
+.navbar .hire-btn:hover {
+  background: var(--font-color-secondary);
+  color: var(--bg-primary);
+}
+/* Style for hero section */
+.hero {
+  height: 680px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Style for welcome text */
+.hero .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .left h2 {
+  font-size: 32px;
+  color: var(--font-color-primary);
+  font-weight: 600;
+}
+
+.hero .left h1 {
+  color: var(--font-color-secondary);
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.hero .left p {
+  color: var(--font-color-primary);
+  font-size: 16px;
+}
+/* Style for image and quote */
+.hero .right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero .right img {
+  width: 60%;
+  height: 60%;
+  border-radius: 5%;
+  margin-bottom: 35px;
+}
+
+.hero .right blockquote {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--font-color-primary);
+}
+/* Style for subsection - Intro paragraph */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 25px;
+  background: var(--bg-secondary);
+}
+
+.about-me .intro-paragragh {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.about-me .intro-paragragh h2 {
+  color: var(--bg-primary);
+}
+
+.about-me .intro-paragragh p {
+  color: var(--font-color-primary);
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.about-me .intro-paragragh p a {
+  color: var(--bg-primary);
+  font-size: 16px;
+}
+/* Style for subsection - Degree progress */
+.about-me .degree-progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-me .degree-progress h3 {
+  color: var(--bg-primary);
+}
+
+.about-me .degree-progress p {
+  color: var(--font-color-primary);
+}
+/* Style the progress bar container */
+progress {
+  width: 300%;
+  height: 20px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* WebKit-based browsers (Chrome, Safari) */
+progress::-webkit-progress-bar {
+  background-color: var(--font-color-primary);
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+}
+
+/* Mozilla-based browsers (Firefox) */
+progress::-moz-progress-bar {
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+}
+/* style for horizontal rule */
+.about-me hr {
+  color: var(--font-color-primary);
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+/* Style for footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-bottom: 10px;
+  background: var(--bg-primary);
+}
+/* Style for copyright */
+.left-footer {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 5px 15px;
+}
+
+.left-footer p {
+  color: var(--font-color-primary);
+  font-size: 16px;
+  padding-top: 10px;
+}
+/* Style for social media links */
+.right-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    padding: 0px 15px;
+}
+
+.right-footer a {
+  color: var(--font-color-primary);
+  font-size: 16px;
+  padding-right: 15px;
+  transition: background 0.3s ease;
+  padding-top: 10px;
+}
+
+.right-footer a:hover {
+  color: var(--font-color-secondary);
+}
+
+.footer .right-footer a img {
+  width: 30px;
+  height: 30px;
+  padding-top: 10px;
+}
