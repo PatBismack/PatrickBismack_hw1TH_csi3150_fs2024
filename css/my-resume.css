@@ -60,7 +60,7 @@ body {
   color: var(--font-color-secondary);
   font-size: 24px;
   margin-right: 50px;
-  transition: backgroun 0.3s ease;
+  transition: background 0.3s ease;
 }
 /* Event to change nav menu color */
 .navbar nav ul li a:hover {
